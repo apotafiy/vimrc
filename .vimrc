@@ -1,3 +1,10 @@
+" This is the source .vimrc.
+" It should be located in ~/.vim/vimrc/.
+" This is done by git cloning the repo into ~/.vim/.
+" In the ~/.vimrc file simply put the folowing:
+" 	source ~/.vim/vimrc/.vimrc
+"""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 set backspace=indent,eol,start
 " shows relative line number on the left
 set relativenumber
