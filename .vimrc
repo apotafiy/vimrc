@@ -11,6 +11,8 @@ set number relativenumber
 set nu rnu
 " shows current line and column in bottom right
 set ruler
+" bar at bottom of window with row,col etc.
+set laststatus=2
 
 " sets line number colors
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
