@@ -15,6 +15,10 @@ set ruler
 " sets line number colors
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
 
+" custom command to open file explorer in current directory and set size to 30
+:command Lex Lexplore 30
+:command LexW Lexplore 30 ~/vimwiki/
+
 " VimWiki
 set nocompatible
 filetype plugin on
