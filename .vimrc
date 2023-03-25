@@ -6,8 +6,9 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set backspace=indent,eol,start
-" shows relative line number on the left
-set relativenumber
+" shows relative line number on the left along with current line
+set number relativenumber
+set nu rnu
 " shows current line and column in bottom right
 set ruler
 
