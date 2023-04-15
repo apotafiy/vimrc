@@ -17,8 +17,8 @@ map <C-l> <C-w>l
 " Alias replace all to S
 nnoremap S :%s//g<Left><Left><Left>
 " NERDTree shortcut        
- 19 nmap <C-n> :NERDTreeToggle<CR>
- 20 nmap <C-w> :NERDTreeToggle ~/vimwiki/<CR>
+nmap <C-n> :NERDTreeToggle<CR>
+nmap <C-w> :NERDTreeToggle ~/vimwiki/<CR>
 
 set backspace=indent,eol,start
 " shows relative line number on the left along with current line
