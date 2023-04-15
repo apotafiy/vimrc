@@ -18,7 +18,7 @@ map <C-l> <C-w>l
 nnoremap S :%s//g<Left><Left><Left>
 " NERDTree shortcut        
 nmap <C-n> :NERDTreeToggle<CR>
-nmap <C-v> :NERDTreeToggle ~/vimwiki/<CR>
+nmap <C-c> :NERDTreeToggle ~/vimwiki/<CR>
 
 set backspace=indent,eol,start
 " shows relative line number on the left along with current line
