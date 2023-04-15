@@ -5,6 +5,18 @@
 " 	source ~/.vim/vimrc/.vimrc
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 
+" Vertically center document when entering insert mode
+autocmd InsertEnter * norm zz
+" Remove trailing whitespace on save
+autocmd BufWritePre * %s/\s\+$//e
+" Shortcuts for split panel navigation
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+" Alias replace all to S
+nnoremap S :%s//g<Left><Left><Left>
+
 set backspace=indent,eol,start
 " shows relative line number on the left along with current line
 set number relativenumber
