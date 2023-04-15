@@ -16,6 +16,9 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l
 " Alias replace all to S
 nnoremap S :%s//g<Left><Left><Left>
+" NERDTree shortcut        
+ 19 nmap <C-n> :NERDTreeToggle<CR>
+ 20 nmap <C-w> :NERDTreeToggle ~/vimwiki/<CR>
 
 set backspace=indent,eol,start
 " shows relative line number on the left along with current line
@@ -85,6 +88,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'vimwiki/vimwiki'
+Plugin 'preservim/nerdtree'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
