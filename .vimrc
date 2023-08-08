@@ -37,6 +37,9 @@ set mmp=25000
 
 " set ctrl-y to yank selected file name
 let g:fzf_action = { 
+  \ 'ctrl-t': 'tab split',
+  \ 'ctrl-x': 'split',
+  \ 'ctrl-v': 'vsplit',
   \ 'ctrl-y': {lines -> setreg('*', join(lines, "\n"))}}
 
 " sets line number colors
