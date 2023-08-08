@@ -29,6 +29,9 @@ set ruler
 " bar at bottom of window with row,col etc.
 set laststatus=2
 
+" set maxmempattern to 25000 from default 5000 to enable search through more files
+set mmp=25000
+
 " sets line number colors
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
 
