@@ -20,6 +20,9 @@ nnoremap S :%s//g<Left><Left><Left>
 nmap <C-n> :NERDTreeToggle<CR>
 nmap <C-c> :NERDTreeToggle ~/vimwiki/<CR>
 
+" fzf shortcut
+nmap <C-f> :Files<CR>
+
 set backspace=indent,eol,start
 " shows relative line number on the left along with current line
 set number relativenumber
@@ -31,6 +34,13 @@ set laststatus=2
 
 " set maxmempattern to 25000 from default 5000 to enable search through more files
 set mmp=25000
+
+" set ctrl-y to yank selected file name
+let g:fzf_action = { 
+  \ 'ctrl-t': 'tab split',
+  \ 'ctrl-x': 'split',
+  \ 'ctrl-v': 'vsplit',
+  \ 'ctrl-y': {lines -> setreg('*', join(lines, "\n"))}}
 
 " sets line number colors
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
@@ -92,6 +102,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'vimwiki/vimwiki'
 Plugin 'preservim/nerdtree'
+Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plugin 'junegunn/fzf.vim'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
