@@ -8,7 +8,7 @@
 " Vertically center document when entering insert mode
 autocmd InsertEnter * norm zz
 " Remove trailing whitespace on save
-autocmd BufWritePre * %s/\s\+$//e
+" autocmd BufWritePre * %s/\s\+$//e
 " Shortcuts for split panel navigation
 map <C-h> <C-w>h
 map <C-j> <C-w>j
