@@ -23,6 +23,9 @@ nmap <C-c> :NERDTreeToggle ~/vimwiki/<CR>
 " fzf shortcut
 nmap <C-f> :Files<CR>
 
+" set tabs to spaces
+set expandtab
+
 set backspace=indent,eol,start
 " shows relative line number on the left along with current line
 set number relativenumber
