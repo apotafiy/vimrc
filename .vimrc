@@ -4,6 +4,7 @@
 " In the ~/.vimrc file simply put the folowing:
 " 	source ~/.vim/vimrc/.vimrc
 """""""""""""""""""""""""""""""""""""""""""""""""""""
+let mapleader=";"
 
 " Vertically center document when entering insert mode
 " autocmd InsertEnter * norm zz
