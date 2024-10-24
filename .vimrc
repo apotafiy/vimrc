@@ -16,7 +16,7 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 " Alias replace all to S
-nnoremap S :%s//g<Left><Left><Left>
+nnoremap S :%s///g<Left><Left><Left>
 " NERDTree shortcut        
 nmap <C-n> :NERDTreeToggle<CR>
 nmap <C-c> :NERDTreeToggle ~/vimwiki/<CR>
